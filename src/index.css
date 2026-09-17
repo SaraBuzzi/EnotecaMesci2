@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: #15110e;
+    color: #e8e2dc;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::selection {
+    background-color: #c49a2a;
+    color: #15110e;
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #15110e;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #443a30;
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #5a4d40;
+  }
+}
+
+@layer components {
+  .font-display {
+    font-family: 'Cormorant Garamond', serif;
+  }
+
+  .text-gradient-gold {
+    background: linear-gradient(135deg, #e6c668 0%, #c49a2a 50%, #e6c668 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .glass-dark {
+    background: rgba(21, 17, 14, 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+
+  .section-padding {
+    @apply px-6 py-20 md:px-12 md:py-28 lg:px-20 lg:py-32;
+  }
+
+  .container-narrow {
+    @apply mx-auto max-w-6xl;
+  }
+}
+
+@layer utilities {
+  .delay-100 { animation-delay: 0.1s; }
+  .delay-200 { animation-delay: 0.2s; }
+  .delay-300 { animation-delay: 0.3s; }
+  .delay-400 { animation-delay: 0.4s; }
+  .delay-500 { animation-delay: 0.5s; }
+  .delay-700 { animation-delay: 0.7s; }
+
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+}
