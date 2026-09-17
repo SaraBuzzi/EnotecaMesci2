@@ -1,11 +1,3 @@
-import { Grape, Clock, Users, Award } from 'lucide-react';
-
-const stats = [
-  { icon: Grape, value: '200+', label: 'Curated Vintages' },
-  { icon: Users, value: '45', label: 'Seats Available' },
-  { icon: Award, value: '10', label: 'Years of Excellence' },
-  { icon: Clock, value: 'Nightly', label: 'Fresh Pairings' },
-];
 
 export default function About() {
   return (
